@@ -1,0 +1,30 @@
+/*
+display: block | inline | inline-block | none | flex
+
+div, p, ul, li, ol, header, footer, section, article ... -> block
+span, a, b, strong, del... -> inline
+img, input, select, button ... -> inline-block 
+
+1. block        : 크기 ㅇ, 마진 ㅇ, 패딩 ㅇ
+2. inline-block : 크기 ㅇ, 마진 ㅇ, 패딩 ㅇ
+3. inline       : 크기 x, 마진(상하x, 좌우ㅇ), 패딩 ㅇ
+*/
+
+.wrapper {max-width: 1000px; margin: 0 auto;}
+.box {border: 1px solid red;}
+.box1 {display: block; height: 100px; padding: 20px;}
+.box2 {display: inline; width: 200px; height: 100px; padding: 50px;}
+.box3 {display: inline-block; width: 200px; height: 100px; margin: 20px;}
+
+header {background-color: #131313; color: #f8f8f8;}
+header h1.logo {float: left; padding: 16px;}
+header ul.navi-wrapper {float: right;}
+header li.navi {display: inline-block; padding: 16px;}
+header h1.logo:hover {background-color: #ccc; color: #131313;}
+header li.navi:hover {background-color: #ccc; color: #131313;}
+
+
+.before-after{border: 10px solid green;}
+.before-after::before {content: "abc"; display: block;}
+.before-after::after {content: "xyz"; display: block;}
+

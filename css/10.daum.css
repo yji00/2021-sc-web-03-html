@@ -1,0 +1,30 @@
+/******************* 공통사항 *********************/
+html, body {font-family: 'AppleSDGothicNeo-Regular', 'Malgun Gothic', '맑은 고딕', 'dotum', '돋움', sans-serif;}
+.wrapper {max-width: 1100px; margin: 0 auto; padding: 0 50px;}
+
+.header-wrapper{ border-bottom: 1px solid rgb(184, 181, 181);}
+	.top-wrapper{color: #999; font-size: 12px;}
+		.top-wrapper .start-page{float: left;  padding: 6px 0;}
+		.top-wrapper .start-page i {font-size: 10px;}
+		.top-wrapper .close-page{float: right;  padding: 6px 0;}
+		.top-wrapper .start-page a:hover{color:  #478dff; text-decoration: underline;}
+
+	.search-wrapper{margin: 20px auto;}
+		.logo-wrap{float: left; width: 126px;  margin-right: 24px;}
+		.search-wrap{float: left; width: 50%; min-width:400px;}
+			.search-wrap form{border: 1px solid  #478dff;}
+			.search-wrap .search-input{ width: calc(100% - 130px); font-size: 20px; outline: none;}
+			.search-wrap i{color:  #478dff; font: 18px; padding: 17px;}
+		.favor-wrap {font-size: 14px; color: #999; padding: 8px 0;}
+			.favor-wrap .list-wrap{float: left;}
+			.favor-wrap .list-wrap li{ display: inline-block; margin: 0 4px; letter-spacing: -2px;}
+			.favor-wrap .list-wrap li:hover{color:  #478dff; text-decoration: underline;}
+			.favor-wrap .btn-wrap{float:right;}
+			.search-wrap .favor-wrap .btn-wrap i {float: left;}
+			.favor-wrap .btn-wrap .bt-prev{border: #478dff solid 1px; padding: 1px 5px 1px 4px;}
+			.favor-wrap .btn-wrap .bt-next{border: #478dff solid 1px; padding: 1px 5px 1px 4px;}
+			
+
+		.banner-wrap{float: right; width: 225px;}
+
+
