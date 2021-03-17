@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Animation을 배워보자</title>
+	<link rel="stylesheet" href="../css/base.css">
+	<style>
+		/* 
+		transition-timing-function: [ease], ease-in, ease-out, ease-in-out, linear
+
+		헤깔리지 말자 trans 3형제
+		- transition	: 변화 				- animation속성을 준다
+		- transform		: 변형 				- 형태를 바꾼다(이동-translate, 회전-rotate, 크기-scale, 투시-perspective)
+		- translate		: 이동/번역 	- 옮기다
+		 */
+		 body {height: 3000px;}
+		.wrapper {max-width: 1200px; margin: auto;}
+		.box {width: 200px; height: 200px; background-color: lightseagreen; border: 10px solid midnightblue; margin: 100px;}
+		
+		.box1 {
+			/* transition-property: width, opacity, background-color, border-width;  */
+			/* transition-duration: 1s, 1s, 1s, 1s; */
+			/* transition-timing-function: ease-in-out  */
+			/* transition-delay: 1s; */
+			/* transition: ease-in-out width 0.5s 2s; */
+			transition: ease-in-out all 1s;
+		}
+		.box1:hover {width: 600px; opacity: 0.5; background-color: orangered; border-width: 50px;}
+
+		.box2 {transition: all 1s; /* transform-origin: right bottom; */}
+		.box2:hover {
+			/* transform: translateX(100px) */
+			/* transform: translateY(100px) */
+			/* transform: translate(100px, 10px) */
+			/* transform: rotate(360deg); */
+			/* transform: rotate3d(1, 0, 1, 45deg) */
+			/* transform: scale(1.5); */
+			/* transform: scaleX(1.5); */
+			/* transform: scaleY(1.5); */
+			/* transform: scale3d(x, y, z); */
+			transform: rotate(45deg);
+		}
+
+		/* 시야 */
+		.perspective {
+			display: inline-block;
+			border: 10px solid blue;
+			transform-style: preserve-3d;
+			perspective: 400px;
+		}
+		.box3 {
+			transition: all 1s;
+		}
+		.box3:hover {
+			transform: rotateX(720deg);
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="box box1"></div>
+		<div class="box box2"></div>
+		<div class="perspective">
+			<div class="box box3"></div>
+		</div>
+	</div>
+</body>
+</html>
